@@ -24,7 +24,6 @@ CHANNEL_LAYERS = {
         },
     },
 }
-print(f"Layers: {CHANNEL_LAYERS}")
 
 
 CELERY_BROKER_URL = os.getenv("REDIS_UR")

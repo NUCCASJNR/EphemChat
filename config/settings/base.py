@@ -28,14 +28,10 @@ INSTALLED_APPS = [
     "phonenumber_field",
     "django_celery_beat",
     "django_celery_results",
-    'users',
-    'desktop',
-    'filesystem',
     'core',
-    'apps.notepad',
-    'apps.terminal',
-    'apps.settings',
-    'apps.common'
+    'apps.users',
+    'apps.messages',
+    'apps.sockets',
 ]
 
 MIDDLEWARE = [
@@ -54,11 +50,11 @@ MIDDLEWARE = [
 ]
 
 
-ROOT_URLCONF = "cofig.urls"
+ROOT_URLCONF = "config.urls"
 
 DATABASES = {}
 
-# AUTH_USER_MODEL = "users.MainUser"
+AUTH_USER_MODEL = "users.MainUser"
 
 # STATIC_URL = "static/"
 # STATIC_ROOT = BASE_DIR / "static"
